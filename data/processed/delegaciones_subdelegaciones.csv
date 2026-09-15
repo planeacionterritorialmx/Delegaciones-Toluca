@@ -1,0 +1,281 @@
+No. Delegación,Nombre Delegación,Tipo,No. Subdelegación,Nombre Subdelegación,Unidad Territorial Básica,Clave Única Municipal
+1,Centro Histórico,Delegación,,,Centro,010A
+1,Centro Histórico,Delegación,,,Santa Clara,010B
+1,Centro Histórico,Delegación,,,5 de Mayo,010C
+1,Centro Histórico,Delegación,,,Francisco Murguía (El Ranchito),010D
+1,Centro Histórico,Delegación,,,La Merced (Alameda),010E
+2,Barrios Tradicionales,Delegación,,,Santa Bárbara,020A
+2,Barrios Tradicionales,Delegación,,,El Cóporo,020B
+2,Barrios Tradicionales,Delegación,,,La Retama,020C
+2,Barrios Tradicionales,Delegación,,,San Miguel Apinahuizco,020D
+2,Barrios Tradicionales,Delegación,,,Unión,020E
+2,Barrios Tradicionales,Delegación,,,San Luis Obispo,020F
+3,Árbol de las Manitas,Delegación,,,Zopilocalco Sur,030A
+3,Árbol de las Manitas,Delegación,,,Zopilocalco Norte,030B
+3,Árbol de las Manitas,Delegación,,,Lomas Altas,030C
+3,Árbol de las Manitas,Delegación,,,Huitzila y Doctores,030D
+3,Árbol de las Manitas,Delegación,,,Niños Héroes (Pensiones),030E
+4,La Maquinita,Delegación,,,Rancho La Mora,040A
+4,La Maquinita,Delegación,,,Los Ángeles,040B
+4,La Maquinita,Delegación,,,Carlos Hank y Los Frailes,040C
+4,La Maquinita,Delegación,,,"Guadalupe, Club Jardín y la Magdalena",040D
+4,La Maquinita,Delegación,,,Tlacopa,040E
+5,Independencia,Delegación,,,Reforma y Ferrocarriles Nacionales (San Juan Bautista),050A
+5,Independencia,Delegación,,,Meteoro,050B
+5,Independencia,Delegación,,,Independencia,050C
+5,Independencia,Delegación,,,Las Torres (Científicos),050D
+5,Independencia,Delegación,,,San Juan Buenavista,050E
+6,San Sebastián,Delegación,,,Valle Verde y Terminal,060A
+6,San Sebastián,Delegación,,,Progreso,060B
+6,San Sebastián,Delegación,,,Izcalli IPIEM,060C
+6,San Sebastián,Delegación,,,San Sebastián y Vértice,060D
+6,San Sebastián,Delegación,,,Izcalli Toluca,060E
+6,San Sebastián,Delegación,,,Salvador Sánchez Colín,060F
+6,San Sebastián,Delegación,,,Comisión Federal de Electricidad,060G
+6,San Sebastián,Delegación,,,Valle Don Camilo,060H
+7,Universidad,Delegación,,,Universidad,070A
+7,Universidad,Delegación,,,Cuauhtémoc,070B
+7,Universidad,Delegación,,,Américas,070C
+7,Universidad,Delegación,,,Altamirano,070D
+8,Santa María de las Rosas,Delegación,,,Santa María de las Rosas,080A
+8,Santa María de las Rosas,Delegación,,,Nueva Santa María de las Rosas,080B
+8,Santa María de las Rosas,Delegación,,,Unidad Victoria,080C
+8,Santa María de las Rosas,Delegación,,,La Magdalena,080D
+8,Santa María de las Rosas,Delegación,,,Nueva Santa María,080E
+8,Santa María de las Rosas,Delegación,,,Benito Juárez,080F
+8,Santa María de las Rosas,Delegación,,,Eva Sámano de López Mateos,080G
+8,Santa María de las Rosas,Delegación,,,Emiliano Zapata,080H
+9,Del Parque,Delegación,,,Del Parque I,090A
+9,Del Parque,Delegación,,,Del Parque II,090B
+9,Del Parque,Delegación,,,Lázaro Cárdenas,090C
+9,Del Parque,Delegación,,,Ampliación Lázaro Cárdenas,090D
+9,Del Parque,Delegación,,,Azteca,090E
+10,Metropolitana,Delegación,,,Las Palomas,100A
+10,Metropolitana,Delegación,,,Las Margaritas,100B
+10,Metropolitana,Delegación,,,Rancho de Maya,100C
+11,Colón,Delegación,,,Colón y Ciprés I,110A
+11,Colón,Delegación,,,Colón y Ciprés II,110B
+11,Colón,Delegación,,,Isidro Fabela Primera Sección,110C
+11,Colón,Delegación,,,Isidro Fabela Segunda Sección,110D
+11,Colón,Delegación,,,Rancho Dolores,110E
+12,Moderna de la Cruz,Delegación,,,Moderna de la Cruz I,120A
+12,Moderna de la Cruz,Delegación,,,Moderna de la Cruz II,120B
+12,Moderna de la Cruz,Delegación,,,Bosques de Colón,120C
+13,Felipe Chávez Becerril,Delegación,,,Ocho Cedros I,130A
+13,Felipe Chávez Becerril,Delegación,,,Villa Hogar,130B
+13,Felipe Chávez Becerril,Delegación,,,Ocho Cedros II,130C
+13,Felipe Chávez Becerril,Delegación,,,Ocho Cedros Segunda Sección,130D
+14,Seminario Conciliar,Delegación,,,Seminario El Parque,140A
+14,Seminario Conciliar,Delegación,,,Seminario Tercera Sección,140B
+14,Seminario Conciliar,Delegación,,,Seminario Primera Sección,140C
+14,Seminario Conciliar,Delegación,,,Seminario El Módulo,140D
+15,Seminario 2 de Marzo,Delegación,,,Seminario Cuarta Sección I,150A
+15,Seminario 2 de Marzo,Delegación,,,Seminario Cuarta Sección II,150B
+15,Seminario 2 de Marzo,Delegación,,,Héroes del 5 de Mayo I,150C
+15,Seminario 2 de Marzo,Delegación,,,Héroes del 5 de Mayo II,150D
+16,Seminario Las Torres,Delegación,,,Seminario San Felipe de Jesús,160A
+16,Seminario Las Torres,Delegación,,,Seminario Segunda Sección,160B
+16,Seminario Las Torres,Delegación,,,Seminario Quinta Sección,160C
+17,Morelos,Delegación,,,Morelos Primera Sección,170A
+17,Morelos,Delegación,,,Morelos Segunda Sección,170B
+17,Morelos,Delegación,,,Federal (Adolfo López Mateos),170C
+18,Ciudad Universitaria,Delegación,,,Plazas de San Buenaventura (incl. Ciudad Universitaria),180A
+18,Ciudad Universitaria,Delegación,,,San Bernardino,180B
+18,Ciudad Universitaria,Delegación,,,Vicente Guerrero,180C
+19,Nueva Oxtotitlán,Delegación,,,Nueva Oxtotitlán I,190A
+19,Nueva Oxtotitlán,Delegación,,,Nueva Oxtotitlán II,190B
+20,Adolfo López Mateos,Delegación,,,Parques Nacionales I,200A
+20,Adolfo López Mateos,Delegación,,,Miguel Hidalgo (Corralitos),200B
+20,Adolfo López Mateos,Delegación,,,Parques Nacionales II,200C
+21,Sánchez,Delegación,,,Sor Juana Inés de la Cruz,210A
+21,Sánchez,Delegación,,,Electricistas Locales,210B
+21,Sánchez,Delegación,,,La Teresona I,210C
+21,Sánchez,Delegación,,,La Teresona II,210D
+21,Sánchez,Delegación,,,La Teresona III,210E
+21,Sánchez,Delegación,,,Sector Popular,210F
+22,Cacalomacán,Delegación,,,Del Centro,220A
+22,Cacalomacán,Delegación,,,Rancho San Miguel Zacango,220B
+22,Cacalomacán,Delegación,,,Sagrado Corazón,220C
+22,Cacalomacán,Delegación,,,El Arenal,220D
+23,Calixtlahuaca,Delegación,,,San Francisco de Asís,230A
+23,Calixtlahuaca,Delegación,,,Zona arqueológica (Col. Tepetate),230B
+23,Calixtlahuaca,Delegación,,,El Calvario (Col. El Calvario; Col. La Peña),230C
+23,Calixtlahuaca,Subdelegación,1 Palmillas,Palmillas,231A,
+24,Capultitlán,Delegación,,,San Isidro Labrador,240A
+24,Capultitlán,Delegación,,,Paseos del Valle,240B
+24,Capultitlán,Delegación,,,San Judas Tadeo,240C
+24,Capultitlán,Delegación,,,La Soledad,240D
+24,Capultitlán,Delegación,,,Los Pinos,240E
+24,Capultitlán,Delegación,,,Guadalupe,240F
+25,San Andrés Cuexcontitlán,Delegación,,,San Andrés,250A
+25,San Andrés Cuexcontitlán,Delegación,,,La Concepción,250B
+25,San Andrés Cuexcontitlán,Delegación,,,Santa Rosa,250C
+25,San Andrés Cuexcontitlán,Delegación,,,La Natividad,250D
+25,San Andrés Cuexcontitlán,Subdelegación,1 Ejido de San Diego de los Padres Cuexcontitlán,Ejido de San Diego de los Padres Cuexcontitlán,251A,
+25,San Andrés Cuexcontitlán,Subdelegación,2 San Diego de los Padres Cuexcontitlán,San Diego de los Padres Cuexcontitlán I,252A,
+25,San Andrés Cuexcontitlán,Subdelegación,2 San Diego de los Padres Cuexcontitlán,San Diego de los Padres Cuexcontitlán II,252B,
+25,San Andrés Cuexcontitlán,Subdelegación,3 Jicaltepec Cuexcontitlán,Jicaltepec Cuexcontitlán,253A,
+25,San Andrés Cuexcontitlán,Subdelegación,4 Sección Siete,Loma La Providencia,254A,
+25,San Andrés Cuexcontitlán,Subdelegación,4 Sección Siete,Ejido de la Y,254B,
+25,San Andrés Cuexcontitlán,Subdelegación,5 La Loma Cuexcontitlán,La Loma Cuexcontitlán,255A,
+26,San Antonio Buenavista,Delegación,,,Camino Real (El Arenal),260A
+26,San Antonio Buenavista,Delegación,,,José María Heredia (Cond. Villas Real),260B
+26,San Antonio Buenavista,Delegación,,,Los Rosales,260C
+27,San Buenaventura,Delegación,,,Insurgentes,270A
+27,San Buenaventura,Delegación,,,Pensador Mexicano,270B
+27,San Buenaventura,Delegación,,,Alameda 2000,270C
+27,San Buenaventura,Delegación,,,Cultural,270D
+27,San Buenaventura,Delegación,,,Del Deporte,270E
+27,San Buenaventura,Subdelegación,1 Guadalupe San Buenaventura,Colonia Guadalupe,271A,
+28,San Cristóbal Huichochitlán,Delegación,,,San Gabriel,280A
+28,San Cristóbal Huichochitlán,Delegación,,,San José Guadalupe Huichochitlán,280B
+28,San Cristóbal Huichochitlán,Delegación,,,La Concepción,280C
+28,San Cristóbal Huichochitlán,Delegación,,,La Trinidad I,280D
+28,San Cristóbal Huichochitlán,Delegación,,,La Trinidad II,280E
+28,San Cristóbal Huichochitlán,Delegación,,,San Salvador II,280F
+28,San Cristóbal Huichochitlán,Delegación,,,San Salvador I,280G
+29,San Felipe Tlalmimilolpan,Delegación,,,Del Centro,290A
+29,San Felipe Tlalmimilolpan,Delegación,,,El Calvario,290B
+29,San Felipe Tlalmimilolpan,Delegación,,,Jardines de San Pedro,290C
+29,San Felipe Tlalmimilolpan,Delegación,,,La Curva,290D
+29,San Felipe Tlalmimilolpan,Delegación,,,Los Álamos,290E
+29,San Felipe Tlalmimilolpan,Delegación,,,La Venta,290F
+29,San Felipe Tlalmimilolpan,Delegación,,,El Frontón,290G
+29,San Felipe Tlalmimilolpan,Delegación,,,Del Panteón,290H
+30,San Juan Tilapa,Delegación,,,Centro,300A
+30,San Juan Tilapa,Delegación,,,Lázaro Cárdenas,300B
+30,San Juan Tilapa,Delegación,,,El Durazno,300C
+30,San Juan Tilapa,Delegación,,,Guadalupe,300D
+31,San Lorenzo Tepaltitlán,Delegación,,,Del Centro,310A
+31,San Lorenzo Tepaltitlán,Delegación,,,Las Flores,310B
+31,San Lorenzo Tepaltitlán,Delegación,,,El Charco,310C
+31,San Lorenzo Tepaltitlán,Delegación,,,San Angelín,310D
+31,San Lorenzo Tepaltitlán,Delegación,,,La Cruz Comalco,310E
+31,San Lorenzo Tepaltitlán,Delegación,,,San Isidro,310F
+31,San Lorenzo Tepaltitlán,Delegación,,,Del Panteón,310G
+31,San Lorenzo Tepaltitlán,Delegación,,,Rincón de San Lorenzo,310H
+31,San Lorenzo Tepaltitlán,Delegación,,,La Loma,310I
+31,San Lorenzo Tepaltitlán,Delegación,,,Celanese,310J
+31,San Lorenzo Tepaltitlán,Delegación,,,El Mogote,310K
+32,San Marcos Yachihuacaltepec,Delegación,,,Norte (Barrio Noshito),320A
+32,San Marcos Yachihuacaltepec,Delegación,,,Sur,320B
+33,San Martín Toltepec,Delegación,,,San Martín,330A
+33,San Martín Toltepec,Delegación,,,Paseos de San Martín,330B
+33,San Martín Toltepec,Delegación,,,San Isidro,330C
+33,San Martín Toltepec,Subdelegación,1 La Palma Toltepec,La Palma Toltepec,331A,
+33,San Martín Toltepec,Subdelegación,2 Sebastián Lerdo de Tejada,Sebastián Lerdo de Tejada,332A,
+33,San Martín Toltepec,Subdelegación,3 Ejido de San Marcos Yachihuacaltepec,Ejido de San Marcos,333A,
+34,San Mateo Otzacatipan,Delegación,,,Poniente I,340A
+34,San Mateo Otzacatipan,Delegación,,,Poniente II,340B
+34,San Mateo Otzacatipan,Delegación,,,Rancho San José,340C
+34,San Mateo Otzacatipan,Delegación,,,Canaleja,340D
+34,San Mateo Otzacatipan,Delegación,,,Oriente I,340E
+34,San Mateo Otzacatipan,Delegación,,,Oriente II,340F
+34,San Mateo Otzacatipan,Subdelegación,1 La Magdalena Otzacatipan,La Magdalena,341A,
+34,San Mateo Otzacatipan,Subdelegación,2 Santa Cruz Otzacatipan,Santa Cruz Otzacatipan (Villa Charra; Central de Abastos),342A,
+34,San Mateo Otzacatipan,Subdelegación,3 San José Guadalupe Otzacatipan,San José Guadalupe Otzacatipan,343A,
+34,San Mateo Otzacatipan,Subdelegación,4 San Diego de los Padres Otzacatipan,San Diego de los Padres,344A,
+34,San Mateo Otzacatipan,Subdelegación,5 San Blas Otzacatipan,San Blas Otzacatipan,345A,
+34,San Mateo Otzacatipan,Subdelegación,6 San Nicolás Tolentino,San Nicolás Tolentino I,346A,
+34,San Mateo Otzacatipan,Subdelegación,6 San Nicolás Tolentino,San Nicolás Tolentino II,346B,
+34,San Mateo Otzacatipan,Subdelegación,6 San Nicolás Tolentino,Francisco Villa,346C,
+34,San Mateo Otzacatipan,Subdelegación,7 Crespa Floresta,La Crespa,347A,
+34,San Mateo Otzacatipan,Subdelegación,7 Crespa Floresta,Jardines de la Crespa,347B,
+34,San Mateo Otzacatipan,Subdelegación,7 Crespa Floresta,Geovillas Arboleda,347C,
+34,San Mateo Otzacatipan,Subdelegación,7 Crespa Floresta,La Floresta,347D,
+34,San Mateo Otzacatipan,Subdelegación,7 Crespa Floresta,Geovillas Independencia,347F,
+34,San Mateo Otzacatipan,Subdelegación,7 Crespa Floresta,Vicente Lombardo,347G,
+35,San Mateo Oxtotitlán,Delegación,,,Centro (Barrio de Tlayaca),350A
+35,San Mateo Oxtotitlán,Delegación,,,Tlalnepantla,350B
+35,San Mateo Oxtotitlán,Delegación,,,Atotonilco,350C
+35,San Mateo Oxtotitlán,Delegación,,,Rincón del Parque,350D
+35,San Mateo Oxtotitlán,Subdelegación,1 Niños Héroes,Niños Héroes I,351A,
+35,San Mateo Oxtotitlán,Subdelegación,1 Niños Héroes,Niños Héroes II,351B,
+35,San Mateo Oxtotitlán,Subdelegación,2 Filiberto Navas,Tierra y Libertad,352A,
+35,San Mateo Oxtotitlán,Subdelegación,2 Filiberto Navas,Protimbos,352B,
+35,San Mateo Oxtotitlán,Subdelegación,2 Filiberto Navas,20 de Noviembre,352C,
+35,San Mateo Oxtotitlán,Subdelegación,2 Filiberto Navas,14 de Diciembre,352D,
+35,San Mateo Oxtotitlán,Subdelegación,2 Filiberto Navas,El Trigo,352E,
+35,San Mateo Oxtotitlán,Subdelegación,2 Filiberto Navas,San Jorge,352F,
+36,San Pablo Autopan,Delegación,,,De Jesús 1ra sección,360A
+36,San Pablo Autopan,Delegación,,,Santa María Tlachaloyita,360B
+36,San Pablo Autopan,Delegación,,,Pueblo Nuevo I,360C
+36,San Pablo Autopan,Delegación,,,Pueblo Nuevo II,360D
+36,San Pablo Autopan,Delegación,,,Santa Cruz I,360E
+36,San Pablo Autopan,Delegación,,,Santa Cruz II,360F
+36,San Pablo Autopan,Delegación,,,De Jesús 3ra sección,360G
+36,San Pablo Autopan,Delegación,,,De Jesús 2da sección,360H
+36,San Pablo Autopan,Subdelegación,1 Ojo de Agua,Ojo de Agua Autopan,361A,
+36,San Pablo Autopan,Subdelegación,2 Aviación Autopan,Aviación Autopan,362A,
+36,San Pablo Autopan,Subdelegación,3 San Carlos Autopan,San Carlos Autopan (Barrio Contracaja),363A,
+36,San Pablo Autopan,Subdelegación,4 San Diego Linares Autopan,San Diego Linares,364A,
+36,San Pablo Autopan,Subdelegación,4 San Diego Linares Autopan,San Diego,364B,
+36,San Pablo Autopan,Subdelegación,4 San Diego Linares Autopan,Real de San Pablo,364C,
+36,San Pablo Autopan,Subdelegación,4 San Diego Linares Autopan,Jicaltepec,364D,
+36,San Pablo Autopan,Subdelegación,4 San Diego Linares Autopan,Galaxia Toluca,364E,
+36,San Pablo Autopan,Subdelegación,5 Jicaltepec Autopan,Jicaltepec Autopan,365A,
+37,San Pedro Totoltepec,Delegación,,,Del Centro,370A
+37,San Pedro Totoltepec,Delegación,,,Manzana Sur,370B
+37,San Pedro Totoltepec,Delegación,,,Del Panteón,370C
+37,San Pedro Totoltepec,Delegación,,,Geovillas,370D
+37,San Pedro Totoltepec,Delegación,,,Francisco I. Madero,370E
+37,San Pedro Totoltepec,Delegación,,,La Galia,370F
+37,San Pedro Totoltepec,Delegación,,,Nueva San Francisco,370G
+37,San Pedro Totoltepec,Subdelegación,1 San Miguel Totoltepec,San Miguel Totoltepec,371A,
+37,San Pedro Totoltepec,Subdelegación,1 San Miguel Totoltepec,Colonia Las Canastas Totoltepec,371B,
+37,San Pedro Totoltepec,Subdelegación,2 Barrio de San Francisco Totoltepec,Barrio de San Francisco Totoltepec,372A,
+37,San Pedro Totoltepec,Subdelegación,3 Guadalupe Totoltepec,Guadalupe Totoltepec,373A,
+37,San Pedro Totoltepec,Subdelegación,4 San Blas Totoltepec,San Blas,374A,
+37,San Pedro Totoltepec,Subdelegación,5 La Constitución Totoltepec,La Constitución Totoltepec,375A,
+37,San Pedro Totoltepec,Subdelegación,6 Arroyo Vista Hermosa,Arroyo Vista Hermosa,376A,
+38,Santa Ana Tlapaltitlán,Delegación,,,16 de Septiembre,380A
+38,Santa Ana Tlapaltitlán,Delegación,,,Pino Suárez,380B
+38,Santa Ana Tlapaltitlán,Delegación,,,Del Panteón,380C
+38,Santa Ana Tlapaltitlán,Delegación,,,Independencia,380D
+38,Santa Ana Tlapaltitlán,Subdelegación,1 Santa María Zozoquipan,Santa María Sur,381A,
+38,Santa Ana Tlapaltitlán,Subdelegación,1 Santa María Zozoquipan,Santa María Norte,381B,
+38,Santa Ana Tlapaltitlán,Subdelegación,2 Buenavista,Buenavista,382A,
+39,Santa Cruz Atzcapotzaltongo,Delegación,,,Santa Cruz Sur,390A
+39,Santa Cruz Atzcapotzaltongo,Delegación,,,Santa Cruz Norte,390B
+39,Santa Cruz Atzcapotzaltongo,Delegación,,,Ex Hacienda La Magdalena (Barrio San Juan de la Cruz),390C
+40,Santa María Totoltepec,Delegación,,,Del Centro,400A
+40,Santa María Totoltepec,Delegación,,,El Coecillo,400B
+40,Santa María Totoltepec,Delegación,,,Héroes,400C
+40,Santa María Totoltepec,Delegación,,,Paseo Totoltepec,400D
+40,Santa María Totoltepec,Delegación,,,El Olimpo,400E
+40,Santa María Totoltepec,Delegación,,,Arboledas,348E/400F
+40,Santa María Totoltepec,Subdelegación,1 El Carmen Totoltepec,El Carmen Totoltepec,401A,
+41,Santiago Miltepec,Delegación,,,Miltepec Centro,410A
+41,Santiago Miltepec,Delegación,,,Miltepec Sur,410B
+41,Santiago Miltepec,Delegación,,,Miltepec Norte,410C
+42,Santiago Tlacotepec,Delegación,,,Del Centro,420A
+42,Santiago Tlacotepec,Delegación,,,Santa María,420B
+42,Santiago Tlacotepec,Delegación,,,Shigande,420C
+42,Santiago Tlacotepec,Delegación,,,Cristo Rey,420D
+42,Santiago Tlacotepec,Delegación,,,El Calvario,420E
+42,Santiago Tlacotepec,Delegación,,,Santa Juanita,420F
+42,Santiago Tlacotepec,Subdelegación,1 El Refugio,El Refugio,421A,
+43,Santiago Tlaxomulco,Delegación,,,El Calvario,430A
+43,Santiago Tlaxomulco,Delegación,,,La Peña,430B
+43,Santiago Tlaxomulco,Delegación,,,Junta Local de Caminos (Los Uribe),430C
+44,Tecaxic,Delegación,,,Tecaxic Oriente,440A
+44,Tecaxic,Delegación,,,Tecaxic Poniente,440B
+45,Tlachaloya,Delegación,,,Tlachaloya,450A
+45,Tlachaloya,Delegación,,,Balbuena,450B
+45,Tlachaloya,Delegación,,,San Carlos,450C
+45,Tlachaloya,Delegación,,,San José Buenavista,450D
+45,Tlachaloya,Subdelegación,1 Tlachaloya Segunda Sección,Del Centro,451A,
+45,Tlachaloya,Subdelegación,1 Tlachaloya Segunda Sección,El Tejocote,451B,
+45,Tlachaloya,Subdelegación,2 San José La Costa,San José La Costa,452A,
+46,San Cayetano Morelos,Delegación,,,San Cayetano,460A
+46,San Cayetano Morelos,Subdelegación,1 Cerrillo Piedras Blancas,Cerrillo Piedras Blancas,461A,
+47,El Cerrillo Vista Hermosa,Delegación,,,Cerrillo,470A
+47,El Cerrillo Vista Hermosa,Delegación,,,El Embarcadero,470B
+48,Sauces,Delegación,,,Sauces I,480A
+48,Sauces,Delegación,,,Sauces III,481B
+48,Sauces,Delegación,,,Sauces IV,482C
+48,Sauces,Delegación,,,Sauces VI,483D
+48,Sauces,Delegación,,,Sauces V,484E
+48,Sauces,Delegación,,,Villas Santín I,484F
+48,Sauces,Delegación,,,Villas Santín II,485G
+48,Sauces,Delegación,,,Sauces II,486H

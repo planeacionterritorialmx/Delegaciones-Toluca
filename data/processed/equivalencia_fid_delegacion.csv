@@ -1,0 +1,51 @@
+fid,nombre_geojson,no_delegacion_sugerido,nombre_excel,tipo_match,confianza
+1.0,CENTRO HISTORICO,1.0,Centro Histórico,exacto,1.0
+2.0,BARRIOS TRADICIONALES,2.0,Barrios Tradicionales,exacto,1.0
+3.0,ARBOL DE LAS MANITAS,3.0,Árbol de las Manitas,exacto,1.0
+4.0,LA MAQUINITA,4.0,La Maquinita,exacto,1.0
+5.0,INDEPENDENCIA,5.0,Independencia,exacto,1.0
+6.0,SAN SEBASTIAN,6.0,San Sebastián,exacto,1.0
+7.0,SAN MARCOS YACHIHUALTEPEC,,,sin coincidencia — revisar,0.0
+,,7.0,Universidad,delegación sin polígono en el geojson,0.0
+8.0,SANTA MARIA DE LAS ROSAS,8.0,Santa María de las Rosas,exacto,1.0
+9.0,DEL PARQUE,9.0,Del Parque,exacto,1.0
+10.0,METROPOLITANA,10.0,Metropolitana,exacto,1.0
+11.0,COLON,11.0,Colón,exacto,1.0
+12.0,MODERNA DE LA CRUZ,12.0,Moderna de la Cruz,exacto,1.0
+13.0,FELIPE CHAVEZ BECERRIL,13.0,Felipe Chávez Becerril,exacto,1.0
+14.0,SEMINARIO CONCILIAR,14.0,Seminario Conciliar,exacto,1.0
+15.0,SEMINARIO 2 MARZO,15.0,Seminario 2 de Marzo,aproximado — revisar,0.92
+16.0,SEMINARIO LAS TORRES,16.0,Seminario Las Torres,exacto,1.0
+17.0,MORELOS,17.0,Morelos,exacto,1.0
+18.0,CIUDAD UNIVERCITARIA,18.0,Ciudad Universitaria,aproximado — revisar,0.95
+19.0,NUEVA OXTOTITLAN,19.0,Nueva Oxtotitlán,exacto,1.0
+20.0,ADOLFO LOPEZ MATEOS,20.0,Adolfo López Mateos,exacto,1.0
+21.0,SANCHEZ,21.0,Sánchez,exacto,1.0
+22.0,CACALOMACAN,22.0,Cacalomacán,exacto,1.0
+23.0,CALIXTLAHUACA,23.0,Calixtlahuaca,exacto,1.0
+,,24.0,Capultitlán,delegación sin polígono en el geojson,0.0
+24.0,SAN ANDRES CUECOXTITLAN,25.0,San Andrés Cuexcontitlán,aproximado — revisar,0.94
+25.0,SAN ANDRES CUEXCOTITLAN,,,sin coincidencia — revisar,0.0
+26.0,SAN ANTONIO BUENABISTA,26.0,San Antonio Buenavista,aproximado — revisar,0.95
+27.0,SAN BUENA AVENTURA,27.0,San Buenaventura,aproximado — revisar,0.94
+28.0,SAN CRISTOBAL HUICHOCHITLAN,28.0,San Cristóbal Huichochitlán,exacto,1.0
+29.0,SAN FELIPE TLALMIMILOLPAN,29.0,San Felipe Tlalmimilolpan,exacto,1.0
+30.0,SAN JUAN TILAPA,30.0,San Juan Tilapa,exacto,1.0
+31.0,SAN LORENZO TEPALTITLAN,31.0,San Lorenzo Tepaltitlán,exacto,1.0
+32.0,SAN MARCOS YACHIHUACALTEPEC,32.0,San Marcos Yachihuacaltepec,exacto,1.0
+33.0,SAN MARTIN TOLTEPEC,33.0,San Martín Toltepec,exacto,1.0
+34.0,SAN MATEO OTZCACATIPAN,34.0,San Mateo Otzacatipan,aproximado — revisar,0.98
+35.0,SAN MATEO OXTOTITLAN,35.0,San Mateo Oxtotitlán,exacto,1.0
+36.0,SAN PABLO AUTOPAN,36.0,San Pablo Autopan,exacto,1.0
+37.0,SAN PEDRO TOTOLTEPEC,37.0,San Pedro Totoltepec,exacto,1.0
+38.0,SANTA ANA TLAPALTITLAN,38.0,Santa Ana Tlapaltitlán,exacto,1.0
+39.0,SANTA CRUZ ATZCAPOTZALTONGO,39.0,Santa Cruz Atzcapotzaltongo,exacto,1.0
+40.0,SANTA MARIA TOTOLTEPEC,40.0,Santa María Totoltepec,exacto,1.0
+41.0,SANTIAGO MILTEPEC,41.0,Santiago Miltepec,exacto,1.0
+42.0,SANTIAGO TLACOTEPEC,42.0,Santiago Tlacotepec,exacto,1.0
+43.0,SANTIAGO TLAXOCOMULCO,43.0,Santiago Tlaxomulco,aproximado — revisar,0.95
+44.0,TECAXIC,44.0,Tecaxic,exacto,1.0
+45.0,TLACHAYOLA,45.0,Tlachaloya,aproximado — revisar,0.8
+46.0,SAN CAYETANO,46.0,San Cayetano Morelos,aproximado — revisar,0.75
+47.0,EL CERRILLO VISTAHERMOSA,47.0,El Cerrillo Vista Hermosa,aproximado — revisar,0.98
+,,48.0,Sauces,delegación sin polígono en el geojson,0.0
