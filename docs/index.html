@@ -127,7 +127,7 @@
   }
 
   /* ---------- Layout ---------- */
-  .layout{ flex:1; display:flex; min-height:0; }
+  .layout{ flex:1; display:flex; min-height:0; position:relative; }
 
   #sidebar{
     width:360px;
@@ -135,7 +135,6 @@
     background:
       radial-gradient(circle at 14px 14px, rgba(27,36,48,.05) 1px, transparent 1.6px) 0 0/22px 22px,
       var(--paper);
-    border-right:1px solid var(--line);
     display:flex;
     flex-direction:column;
     min-height:0;
@@ -254,6 +253,10 @@
     box-shadow:var(--shadow);
   }
 
+  /* Pestaña para ocultar/mostrar el panel flotante en escritorio,
+     de modo que el mapa pueda verse centrado y a pantalla completa. */
+  .collapse-tab{ display:none; }
+
   @media (max-width: 760px){
     .topbar{ padding:12px 14px; }
     .subtitle{ display:none; }
@@ -273,6 +276,50 @@
     }
     #app.nav-open #sidebar{ transform:translateY(0); }
     .fab{ display:inline-flex; align-items:center; gap:6px; }
+  }
+
+  /* ---------- Escritorio: panel flotante para centrar el mapa ---------- */
+  @media (min-width: 761px){
+    #sidebar{
+      position:absolute;
+      top:16px; left:16px; bottom:16px;
+      width:360px;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      z-index:900;
+      transition:transform .25s ease;
+    }
+    #app.sidebar-collapsed #sidebar{
+      transform:translateX(calc(-100% - 32px));
+    }
+    .collapse-tab{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:absolute;
+      top:50%;
+      left:392px;
+      transform:translateY(-50%);
+      width:22px;
+      height:52px;
+      padding:0;
+      background:var(--ink-900);
+      color:var(--text-paper);
+      border:1px solid rgba(182,138,53,.4);
+      border-left:none;
+      border-radius:0 8px 8px 0;
+      z-index:901;
+      font-size:.95rem;
+      transition:left .25s ease;
+    }
+    .collapse-tab:hover{ background:var(--ink-800); }
+    .collapse-tab:focus-visible{ outline:2px solid var(--brass-soft); outline-offset:1px; }
+    #app.sidebar-collapsed .collapse-tab{
+      left:16px;
+      border-left:1px solid rgba(182,138,53,.4);
+      border-radius:8px;
+    }
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -316,6 +363,8 @@
   </header>
 
   <div class="layout">
+    <button id="sidebarCollapseBtn" class="collapse-tab" type="button"
+      aria-expanded="true" aria-controls="sidebar" title="Ocultar/mostrar panel lateral">‹</button>
     <aside id="sidebar">
       <ul id="list" class="list" role="listbox" aria-label="Lista de delegaciones"></ul>
 
@@ -356,6 +405,21 @@
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // El panel lateral ahora flota SOBRE el mapa en escritorio (no lo empuja),
+  // así el mapa siempre ocupa el ancho completo y queda centrado en pantalla.
+  // Esta ayuda evita que un polígono seleccionado quede tapado bajo el panel.
+  function isDesktopSidebarOpen(){
+    return window.matchMedia('(min-width:761px)').matches &&
+      !document.getElementById('app').classList.contains('sidebar-collapsed');
+  }
+  function mapPadding(base){
+    base = base || 20;
+    if (isDesktopSidebarOpen()){
+      return { paddingTopLeft:[392, base], paddingBottomRight:[base, base] };
+    }
+    return { padding:[base, base] };
+  }
+
   // Paleta tierra/joya, coherente con la identidad cartográfica
   const PALETTE = [
     '#3F6B4F','#B07A3E','#4A6B8A','#8C4B3F','#6E5A8C','#2F7A6E',
@@ -367,6 +431,64 @@
   function colorFor(fid){
     return PALETTE[((fid - 1) * 7) % PALETTE.length];
   }
+
+  // Planos oficiales por número de delegación (alojados como adjuntos de GitHub,
+  // ver github.com/planeacionterritorialmx/Delegaciones-Toluca/releases/tag/planos-v1).
+  // Nota: según el README, el número de "Delegación" del catálogo no siempre
+  // coincide con el fid del polígono. Los casos conocidos con discrepancia son
+  // fid 7 (polígono = San Marcos Yachihualtepec, catálogo 7 = Universidad, sin
+  // polígono propio) y fid 24/25 (San Andrés Cuecoxtitlán / Cuexcotitlán).
+  // En esos casos el plano mostrado puede no corresponder exactamente al polígono.
+  const PLANOS = {
+    1: "https://github.com/user-attachments/assets/41b7ccb0-f1e1-452b-b60f-8fda8cb7540e",
+    2: "https://github.com/user-attachments/assets/e78967a7-2d73-43c1-b748-f06e6399b825",
+    3: "https://github.com/user-attachments/assets/d2c15426-a482-4f24-b637-4b204a236f49",
+    4: "https://github.com/user-attachments/assets/d81b1628-3208-48b7-897e-ca4440a62fb9",
+    5: "https://github.com/user-attachments/assets/8df66d23-42a1-4a4a-824c-d7c7ecefaac9",
+    6: "https://github.com/user-attachments/assets/a14ebad9-139a-4234-b573-6bcc80154e89",
+    7: "https://github.com/user-attachments/assets/89d737ba-7f8e-42b2-b85c-4788e4681406",
+    8: "https://github.com/user-attachments/assets/5d0b55f2-c1bd-414c-8f81-af1d0fb272d6",
+    9: "https://github.com/user-attachments/assets/aa7250e8-6aa4-47ab-9976-699152f6ef39",
+    10: "https://github.com/user-attachments/assets/dc39edf6-a672-4f16-92a8-d52954ec8cdd",
+    11: "https://github.com/user-attachments/assets/425801cd-9c7e-4ee0-9124-41a7f7a714fc",
+    12: "https://github.com/user-attachments/assets/2583c94a-6edf-4e94-a8f3-36024c14034a",
+    13: "https://github.com/user-attachments/assets/0c52a9af-b056-43a2-af12-8225af68f84f",
+    14: "https://github.com/user-attachments/assets/f3752849-8c9a-4e13-9e23-7ca18bf1183b",
+    15: "https://github.com/user-attachments/assets/e3ea259b-a4e9-47f0-8a9f-213933e5d25a",
+    16: "https://github.com/user-attachments/assets/2eff7a5b-bdb3-4d75-be1a-d88e2b6d9072",
+    17: "https://github.com/user-attachments/assets/9465feab-f4cf-4b5c-b25d-c8fa08caf7a6",
+    18: "https://github.com/user-attachments/assets/05804f59-8490-4bee-8c71-49b9f853f9a9",
+    19: "https://github.com/user-attachments/assets/1d6405b7-3279-4792-946b-194692176dad",
+    20: "https://github.com/user-attachments/assets/4472fd16-0f80-4cff-ae81-13d059d04290",
+    21: "https://github.com/user-attachments/assets/3ac814c9-89f5-4fb5-8d2c-5eca167d87e6",
+    22: "https://github.com/user-attachments/assets/a77eef80-37f9-4e85-bda7-d119f7057682",
+    23: "https://github.com/user-attachments/assets/3c21e3eb-ea46-4dfe-918c-7a1795964d77",
+    24: "https://github.com/user-attachments/assets/5c34c436-6c48-41b7-aed6-6f4a634ed2ad",
+    25: "https://github.com/user-attachments/assets/9925bb0a-48ff-4370-83d3-7849a97c09c8",
+    26: "https://github.com/user-attachments/assets/60b179d9-4c63-4379-83e3-80a136ecaac9",
+    27: "https://github.com/user-attachments/assets/d02f3c81-49bd-4589-88cf-70e8ffebbe5c",
+    28: "https://github.com/user-attachments/assets/3ed8c8dd-1125-4551-8b18-f2e97b34cf0f",
+    29: "https://github.com/user-attachments/assets/85ce6c91-b003-45b1-9532-cdb3aae5dce8",
+    30: "https://github.com/user-attachments/assets/5b12bc26-9dce-458a-b1ca-efb59b8e208b",
+    31: "https://github.com/user-attachments/assets/d91535fd-ddd6-410e-a6b0-a6741d8cf81a",
+    32: "https://github.com/user-attachments/assets/344e24ef-d378-4a3e-85ea-50e96e7fdbee",
+    33: "https://github.com/user-attachments/assets/e405b840-9e33-4c9a-b292-6b746b717c07",
+    34: "https://github.com/user-attachments/assets/51cdfa73-9d20-444c-95c0-6604a7896092",
+    35: "https://github.com/user-attachments/assets/cb2b9eed-2c5a-41b3-983e-91feb49db3a6",
+    36: "https://github.com/user-attachments/assets/5caa0ca1-0360-45e9-9a5d-4551d1ff13a4",
+    37: "https://github.com/user-attachments/assets/bb8b48f5-6c12-4ab2-ae60-15f614e9bc9d",
+    38: "https://github.com/user-attachments/assets/5025488a-91c0-4bea-832c-f2c74223568b",
+    39: "https://github.com/user-attachments/assets/8b6cf904-f06e-4974-9f07-9a61d83c8d8d",
+    40: "https://github.com/user-attachments/assets/8e06bc5a-063b-4d69-b7da-94db184983e6",
+    41: "https://github.com/user-attachments/assets/91351914-9a0b-4d97-a141-1d1a72778356",
+    42: "https://github.com/user-attachments/assets/055a2539-507a-4f01-adab-e6778fd6dfc3",
+    43: "https://github.com/user-attachments/assets/b7a88218-6a9b-400c-b8cf-7581db633d9f",
+    44: "https://github.com/user-attachments/assets/8e9377a3-d306-4c11-89bb-6d9060d3b078",
+    45: "https://github.com/user-attachments/assets/062fb2e9-a954-4b1b-815f-3f61bdcfbb37",
+    46: "https://github.com/user-attachments/assets/7b873865-604e-4a75-98ca-675d6c5ff11c",
+    47: "https://github.com/user-attachments/assets/9acfb1b3-43fe-498b-8c4f-3c59c3641e7b",
+    48: "https://github.com/user-attachments/assets/031ea4d9-5c8b-45ed-a13a-b371b2a46319"
+  };
 
   const SMALL_WORDS = new Set(['de','del','las','los','la','el','y']);
   function titleCase(str){
@@ -438,7 +560,7 @@
   }).addTo(map);
 
   const fullBounds = geoLayer.getBounds();
-  map.fitBounds(fullBounds, { padding:[20,20] });
+  map.fitBounds(fullBounds, mapPadding(20));
 
   // ---------------------------------------------------------------
   // Lista lateral — conexión bidireccional lista <-> mapa
@@ -523,10 +645,10 @@
     layer.bringToFront();
 
     if (opts.fly){
-      map.flyToBounds(layer.getBounds(), {
-        padding:[60,60],
-        duration: reduceMotion ? 0 : .6
-      });
+      map.flyToBounds(layer.getBounds(), Object.assign(
+        mapPadding(60),
+        { duration: reduceMotion ? 0 : .6 }
+      ));
     }
     highlightListItem(id);
     renderDetail(feature, layer);
@@ -556,6 +678,11 @@
       ? '<img src="' + imgUrl + '" alt="Escudo de ' + titleCase(feature.properties.NOMBRE_DEL) + '" style="width:100%;border-radius:8px;margin-bottom:10px;">'
       : '';
 
+    const planoUrl = PLANOS[feature.properties.fid];
+    const planoHtml = planoUrl
+      ? '<a href="' + planoUrl + '" target="_blank" rel="noopener">Ver plano oficial ↗</a>'
+      : '';
+
     detailEl.innerHTML =
       '<div class="detail-id">Delegación N.º ' + String(feature.properties.fid).padStart(2,'0') + '</div>' +
       '<h2 class="detail-name">' + titleCase(feature.properties.NOMBRE_DEL) + '</h2>' +
@@ -565,6 +692,7 @@
         '<div><dt>Centroide</dt><dd class="mono">' + centerTxt + '</dd></div>' +
       '</dl>' +
       '<div class="detail-actions">' +
+        planoHtml +
         '<a href="' + gmapsUrl + '" target="_blank" rel="noopener">Ver en Google Maps ↗</a>' +
         '<a href="https://toluca.gob.mx" target="_blank" rel="noopener">Portal del Ayuntamiento ↗</a>' +
       '</div>' +
@@ -579,7 +707,10 @@
     listEl.querySelectorAll('.item.active').forEach(function(b){ b.classList.remove('active'); });
     detailEl.classList.add('empty');
     detailEl.innerHTML = '<p>Selecciona una delegación en el mapa o en la lista para ver sus datos.</p>';
-    map.flyToBounds(fullBounds, { padding:[20,20], duration: reduceMotion ? 0 : .6 });
+    map.flyToBounds(fullBounds, Object.assign(
+      mapPadding(20),
+      { duration: reduceMotion ? 0 : .6 }
+    ));
   });
 
   // ---------------------------------------------------------------
@@ -609,6 +740,16 @@
   toggleBtn.addEventListener('click', function(){
     const open = appEl.classList.toggle('nav-open');
     toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  // ---------------------------------------------------------------
+  // Panel flotante (escritorio) — ocultar/mostrar para centrar el mapa
+  // ---------------------------------------------------------------
+  const collapseBtn = document.getElementById('sidebarCollapseBtn');
+  collapseBtn.addEventListener('click', function(){
+    const collapsed = appEl.classList.toggle('sidebar-collapsed');
+    collapseBtn.textContent = collapsed ? '›' : '‹';
+    collapseBtn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
   });
 
   // ---------------------------------------------------------------
